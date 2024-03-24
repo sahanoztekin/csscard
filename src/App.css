@@ -1,0 +1,45 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #333;
+}
+
+.container {
+  display: flex;
+  gap: 32px;
+}
+
+.panel {
+  background-position: center;
+  color: black;
+  transition: width 0.25s ease-in;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 401px;
+  height: 568px;
+}
+
+.panel h3 {
+  font-size: 24px;
+  opacity: 0;
+  transition: opacity 0.35s ease-in;
+  color: white;
+}
+
+.active {
+  width: 513px;
+  box-shadow: -1px -110px 57px -49px rgba(0, 0, 0, 1) inset;
+}
+
+.active h3 {
+  opacity: 1;
+}
